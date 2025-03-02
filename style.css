@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e55c8a, #ff6f61);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.ta-wrapper {
+  background: #3c424a;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  min-height: 300px;
+}
+
+.heading h1 {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-wrapper input {
+  flex: 1;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.input-wrapper input:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.input-wrapper button {
+  background: #e55c8a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input-wrapper button:hover {
+  background: #ff6f61;
+}
+
+.todo-lists {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.todo-item input {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+}
+
+.todo-item .action-items {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-item i {
+  color: #e55c8a;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #e55c8a;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.todo-item i:hover {
+  background: #e55c8a;
+  color: white;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.fa-x {
+  padding: 8px 10px !important;
+}
+
+.task-counters {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-counters p {
+  margin: 0;
+}
+
+/* Color for Total Tasks */
+#total-tasks {
+  color: #ff4d4d; /* Red */
+  font-weight: bold;
+}
+
+/* Color for Pending Tasks */
+#pending-tasks {
+  color: #ffcc00; /* Yellow */
+  font-weight: bold;
+}
+
+/* Color for Completed Tasks */
+#completed-tasks {
+  color: #33cc33; /* Green */
+  font-weight: bold;
+}
+
+/* Scrollbar styling */
+.todo-lists::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todo-lists::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.todo-lists::-webkit-scrollbar-thumb {
+  background: #e55c8a;
+  border-radius: 4px;
+}
+
+.todo-lists::-webkit-scrollbar-thumb:hover {
+  background: #ff6f61;
+}
