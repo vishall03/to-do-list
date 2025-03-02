@@ -20,11 +20,10 @@ A simple and interactive Todo App built with **HTML**, **CSS**, and **JavaScript
 ## Screenshots
 
 ### Desktop View
-
-![Desktop View](https://via.placeholder.com/800x500) <!-- Replace with an actual screenshot -->
+![Screenshot 2025-03-02 at 12 05 14 PM](https://github.com/user-attachments/assets/46f2b26d-ec9b-4439-afd5-659a3d35136c)
 
 ### Mobile View
-![Mobile View](https://via.placeholder.com/300x500) <!-- Replace with an actual screenshot -->
+![Screenshot 2025-03-02 at 11 51 24 AM](https://github.com/user-attachments/assets/b5aecbbd-fff3-46e7-bed6-ab9ad3cdc80e)
 
 ---
 
@@ -41,11 +40,7 @@ A simple and interactive Todo App built with **HTML**, **CSS**, and **JavaScript
 3. **Mark a Task as Complete**:
    - Click the **checkmark icon** next to the task to mark it as completed.
 
-4. **Delete a Task**:
-   - Select a task by clicking on it.
-   - Press the **Delete** key on your keyboard or click the **trash icon** to delete the task.
-
-5. **Task Counters**:
+4. **Task Counters**:
    - The app displays:
      - **Total Tasks**: The total number of tasks added.
      - **Pending Tasks**: The number of tasks not yet completed.
